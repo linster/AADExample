@@ -68,3 +68,25 @@ Extending applications to integrate with interfaces outside the core application
 - Create an app widget that displays on the device home screen
 - Implement a task to update the app widget periodically
 - Create and display a notification to the user
+
+
+
+# Meeting the Requirements
+The easiest way to exercise all of these tasks is to make several projects, each doing a little bit. 
+
+## Enhanced System Integration
+
+- The app widget will display a number and a unix timestamp on the homescreen.
+- A service will update the app widget every 5ish seconds. Every time the widget is updated, the number is incremented mod 5.
+- The notification in the notification tray will do several things:
+- If number == 0: Big notification, deep link to main activity.
+- If number in 1, 2: Small notification, deep link to Activity12 with the URL of the deep link containing the number.
+- If number in 34: Same as above, but activity34.
+
+- Add an app shortcut to activity12. From the launcher icon.
+- Add a pinned app widget for Android 8.0 that opens Activity34
+
+- Another app widget will contain the magic number above, as well as a list of "elephant"[number:] strings. Clicking on a particular string will launch an email intent filled with that string.
+
+
+

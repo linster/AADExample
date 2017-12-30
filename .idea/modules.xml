@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AADExample.iml" filepath="$PROJECT_DIR$/AADExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appwidgets/appwidgets.iml" filepath="$PROJECT_DIR$/appwidgets/appwidgets.iml" />
     </modules>
   </component>
 </project>

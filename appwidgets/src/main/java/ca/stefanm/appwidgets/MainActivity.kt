@@ -2,6 +2,7 @@ package ca.stefanm.appwidgets
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import ca.stefanm.appwidgets.backgroundupdates.BasicWidgetUpdateService
 
 class MainActivity : AppCompatActivity() {
 

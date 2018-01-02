@@ -52,7 +52,7 @@ class BasicWidgetUpdateService : JobService() {
     private fun updateBasicWidget(existingViewModel: BasicWidgetViewModel, time : Long) {
 
         val newViewModel = existingViewModel.copy(
-                magicNumber = existingViewModel.magicNumber + 1 % 5,
+                magicNumber = (existingViewModel.magicNumber + 1 ).rem(5),
                 timestamp = time
         )
 

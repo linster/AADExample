@@ -76,8 +76,8 @@ The easiest way to exercise all of these tasks is to make several projects, each
 
 ## Enhanced System Integration
 
-- The app widget will display a number and a unix timestamp on the homescreen.
-- A service will update the app widget every 5ish seconds. Every time the widget is updated, the number is incremented mod 5.
+- (√) The app widget will display a number and a unix timestamp on the homescreen.
+- (√) A service will update the app widget every 5ish seconds. Every time the widget is updated, the number is incremented mod 5.
 - The notification in the notification tray will do several things:
 - If number == 0: Big notification, deep link to main activity.
 - If number in 1, 2: Small notification, deep link to Activity12 with the URL of the deep link containing the number.
@@ -87,6 +87,8 @@ The easiest way to exercise all of these tasks is to make several projects, each
 - Add a pinned app widget for Android 8.0 that opens Activity34
 
 - Another app widget will contain the magic number above, as well as a list of "elephant"[number:] strings. Clicking on a particular string will launch an email intent filled with that string.
+
+- Another widget, same as above, but each list item opens a different app deep link?
 
 
 

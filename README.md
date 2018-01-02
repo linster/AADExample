@@ -76,6 +76,7 @@ The easiest way to exercise all of these tasks is to make several projects, each
 
 ## Enhanced System Integration
 
+### Widgets
 - (√) The app widget will display a number and a unix timestamp on the homescreen.
 - (√) A service will update the app widget every 5ish seconds. Every time the widget is updated, the number is incremented mod 5.
 - The notification in the notification tray will do several things:
@@ -90,5 +91,6 @@ The easiest way to exercise all of these tasks is to make several projects, each
 
 - Another widget, same as above, but each list item opens a different app deep link?
 
+### Notifications
 
 

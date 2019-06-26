@@ -26,14 +26,14 @@ class BasicWidget : BroadcastReceiver() {
                 AppWidgetManager.ACTION_APPWIDGET_RESTORED
         )){ return }
 
-        //Useful for update.
+        //Used for update.
         //AppWidgetIds on update contains which widget updated (such as a resize by the user, etc). If missing,
         //then we'll just use all the ids instantiated by the user that could possibly need an update.
         //Google designed this API so that you only have to update the widgets that changed, not all of them all the time.
         val appWidgetIds : IntArray = intent.extras?.getIntArray(AppWidgetManager.EXTRA_APPWIDGET_IDS)
                 ?: AppWidgetManager.getInstance(context).getAppWidgetIds(ComponentName(context, this::class.java))
 
-        //Useful for Delete, OptionsChanged
+        //Used for Delete, OptionsChanged
         val appWidgetId : Int? = intent.extras?.getInt(AppWidgetManager.EXTRA_APPWIDGET_ID)
 
         when (intent.action) {
